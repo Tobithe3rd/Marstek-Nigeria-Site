@@ -35,7 +35,7 @@ export default function HomePage() {
         />
 
         <div className="relative mx-auto max-w-6xl px-6 md:px-8 pt-32 pb-36 md:pt-44 md:pb-48">
-          <div className="max-w-3xl">
+          <div className="max-w-xl sm:max-w-3xl">
             <p className="text-xs md:text-sm font-mono uppercase tracking-[0.2em] text-brand-soft mb-8">
               Solar Energy / Portable Power / Nigeria
             </p>
@@ -60,7 +60,7 @@ export default function HomePage() {
 
       {/* Feature intro — editorial 2-col, light background */}
       <section className="mx-auto max-w-6xl px-6 md:px-8 py-28 md:py-40">
-        <div className="grid md:grid-cols-[1fr_1.4fr] gap-16 md:gap-28 items-start">
+        <div className="grid md:grid-cols-[1fr_1.4fr] gap-12 md:gap-28 items-start">
           <div>
             <h2 className="font-display text-display font-normal tracking-tight text-black leading-[1.1] text-[clamp(2rem,5vw,3.5rem)]">
               Built for Nigerian <span className="italic text-brand">conditions.</span>

@@ -3,7 +3,7 @@ import { products } from "@/lib/products";
 export default function ProductsPage() {
   return (
     <div className="mx-auto max-w-6xl px-6 md:px-8 py-16 md:py-28">
-      <header className="max-w-2xl">
+      <header className="max-w-xl sm:max-w-2xl">
         <h1 className="font-display text-hero font-normal tracking-tight text-black leading-[1.05] text-[clamp(2.25rem,6vw,4.5rem)]">
           Products
         </h1>
