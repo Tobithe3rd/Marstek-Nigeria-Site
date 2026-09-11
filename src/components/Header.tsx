@@ -15,7 +15,7 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 bg-white/20 backdrop-blur-[16px] saturate-[120%] border-b border-white/10" style={{ backdropFilter: "blur(16px) saturate(120%)", WebkitBackdropFilter: "blur(16px) saturate(120%)" }}>
-      <div className="mx-auto max-w-6xl px-5 md:px-8 h-[72px] flex items-center justify-between">
+      <div className="mx-auto max-w-6xl px-[clamp(1.25rem,4vw,2rem)] md:px-[clamp(1.5rem,3vw,2.5rem)] h-[clamp(3.5rem,9vw,4.5rem)] flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="block h-[42px] md:h-[48px] w-auto shrink-0 hover:opacity-90 transition-opacity duration-300 ease-premium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 focus-visible:ring-offset-white " aria-label="Marstek Nigeria home">
           <Image

@@ -7,7 +7,7 @@ export default function Footer() {
       {/* Subtle brand glow at top edge */}
       <div className="absolute top-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-brand/40 to-transparent" />
 
-      <div className="mx-auto max-w-6xl px-6 md:px-8">
+      <div className="mx-auto max-w-6xl px-[clamp(1.25rem,4vw,2rem)] md:px-[clamp(1.5rem,3vw,2.5rem)]">
         <div className="py-16 md:py-24 grid md:grid-cols-[1fr_1fr_1fr] gap-12 md:gap-8 items-start">
           {/* Brand */}
           <div>

@@ -35,7 +35,7 @@ export default function HomePage() {
           aria-hidden="true"
         />
 
-        <div className="relative mx-auto max-w-6xl px-6 md:px-8 pt-32 pb-36 md:pt-44 md:pb-48">
+        <div className="relative mx-auto max-w-6xl px-[clamp(1.25rem,4vw,2rem)] md:px-[clamp(1.5rem,3vw,2.5rem)] pt-[clamp(5rem,14vw,11rem)] pb-[clamp(6rem,16vw,12rem)] md:pt-[clamp(7rem,12vw,11rem)] md:pb-[clamp(8rem,14vw,12rem)]">
           <div className="max-w-md sm:max-w-2xl lg:max-w-3xl">
             <p className="text-xs md:text-sm font-mono uppercase tracking-[0.2em] text-brand-soft mb-8">
               Solar Energy / Portable Power / Nigeria
@@ -60,7 +60,7 @@ export default function HomePage() {
       </section>
 
       {/* Feature intro — editorial 2-col, light background */}
-      <section className="mx-auto max-w-5xl md:max-w-6xl px-6 md:px-8 py-24 md:py-36">
+      <section className="mx-auto max-w-5xl md:max-w-6xl px-[clamp(1.25rem,4vw,2rem)] md:px-[clamp(1.5rem,3vw,2.5rem)] py-[clamp(4rem,10vw,9rem)] md:py-[clamp(6rem,8vw,9rem)]">
         <div className="grid md:grid-cols-[1fr_1.4fr] gap-12 md:gap-28 items-start">
           <div>
             <h2 className="font-display text-display font-normal tracking-tight text-black leading-[1.1] text-[clamp(2rem,5vw,3.5rem)] tracking-[-0.02em]">
@@ -105,12 +105,12 @@ export default function HomePage() {
 
       {/* What we offer — dark glass cards with subtle radius */}
       <section className="bg-dark-section" aria-label="What we offer">
-        <div className="mx-auto max-w-6xl px-6 md:px-8 py-20 md:py-32">
+        <div className="mx-auto max-w-6xl px-[clamp(1.25rem,4vw,2rem)] md:px-[clamp(1.5rem,3vw,2.5rem)] py-[clamp(4rem,10vw,8rem)] md:py-[clamp(5rem,9vw,8rem)]">
           <h2 className="font-display text-display font-normal tracking-tight text-white mb-16 md:mb-24 leading-[1.05] text-[clamp(2rem,5vw,3.5rem)]">
             Three ways to stay <span className="italic text-brand-soft">powered.</span>
           </h2>
 
-          <div className="grid md:grid-cols-[1fr_1.2fr_1fr] gap-6 md:gap-6">
+          <div className="grid md:grid-cols-[1fr_1.2fr_1fr] gap-[clamp(1rem,2.5vw,1.5rem)] md:gap-[clamp(1.25rem,2vw,1.5rem)]">
             {/* Card 1 — glass surface with subtle radius */}
             <article className="glass-card p-6 md:p-8 hover:-translate-y-[6px] hover:shadow-[0_28px_80px_rgba(3,180,255,0.12)] transition-[transform,shadow] duration-300 ease-premium">
               <div className="w-10 h-10 bg-brand/15 flex items-center justify-center mb-6 rounded-md">
