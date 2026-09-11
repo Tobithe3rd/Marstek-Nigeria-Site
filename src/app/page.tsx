@@ -111,7 +111,7 @@ export default function HomePage() {
 
           <div className="grid md:grid-cols-[1fr_1.2fr_1fr] gap-6 md:gap-6">
             {/* Card 1 — glass surface with subtle radius */}
-            <article className="glass-card p-6 md:p-8 hover:-translate-y-[6px] hover:shadow-[0_28px_80px_rgba(3,180,255,0.12)] transition-[transform,shadow] duration-400 ease-premium">
+            <article className="glass-card p-6 md:p-8 hover:-translate-y-[6px] hover:shadow-[0_28px_80px_rgba(3,180,255,0.12)] transition-[transform,shadow] duration-300 ease-premium">
               <div className="w-10 h-10 bg-brand/15 flex items-center justify-center mb-6 rounded-md">
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="text-brand">
                   <rect x="4" y="4" width="16" height="16" rx="3" />
@@ -120,13 +120,13 @@ export default function HomePage() {
                 </svg>
               </div>
               <h3 className="font-display text-xl md:text-[1.4rem] font-normal text-white tracking-tight leading-snug">Portable Power Stations</h3>
-              <p className="mt-4 text-sm text-white/55 leading-relaxed">
+              <p className="mt-4 text-sm text-white/70 leading-relaxed">
                 500W, 1000W, and 2000W units for backup, travel, and work. Built for heat, humidity, and long discharge cycles.
               </p>
             </article>
 
             {/* Card 2 — full-width middle, dark glass with image */}
-            <article className="md:col-span-1 glass-card-dark overflow-hidden hover:-translate-y-[6px] hover:shadow-[0_28px_80px_rgba(3,180,255,0.2)] transition-[transform,shadow] duration-400 ease-premium relative">
+            <article className="md:col-span-1 glass-card-dark overflow-hidden hover:-translate-y-[6px] hover:shadow-[0_28px_80px_rgba(3,180,255,0.2)] transition-[transform,shadow] duration-300 ease-premium relative">
               <Image
                 src="/images/placeholder-600w-solar.png"
                 alt="Solar panel array"
@@ -137,14 +137,14 @@ export default function HomePage() {
               <div className="absolute inset-0 bg-gradient-to-t from-navy-deep/70 via-transparent to-transparent" aria-hidden="true" />
               <div className="relative z-10 p-6 md:p-8">
                 <h3 className="font-display text-xl md:text-[1.4rem] font-normal text-white tracking-tight leading-snug">Solar Panels</h3>
-                <p className="mt-4 text-sm text-white/55 leading-relaxed">
+                <p className="mt-4 text-sm text-white/70 leading-relaxed">
                   Foldable monocrystalline arrays for charging and direct solar applications. Fast recharge, minimal footprint.
                 </p>
               </div>
             </article>
 
             {/* Card 3 — glass surface */}
-            <article className="glass-card p-6 md:p-8 hover:-translate-y-[6px] hover:shadow-[0_28px_80px_rgba(3,180,255,0.12)] transition-[transform,shadow] duration-400 ease-premium">
+            <article className="glass-card p-6 md:p-8 hover:-translate-y-[6px] hover:shadow-[0_28px_80px_rgba(3,180,255,0.12)] transition-[transform,shadow] duration-300 ease-premium">
               <div className="w-10 h-10 bg-brand/15 flex items-center justify-center mb-6 rounded-md">
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="text-brand">
                   <circle cx="12" cy="12" r="10" />
@@ -152,7 +152,7 @@ export default function HomePage() {
                 </svg>
               </div>
               <h3 className="font-display text-xl md:text-[1.4rem] font-normal text-white tracking-tight leading-snug">Local Support</h3>
-              <p className="mt-4 text-sm text-white/55 leading-relaxed">
+              <p className="mt-4 text-sm text-white/70 leading-relaxed">
                 Based in Lagos. Service, advice, and delivery tailored to Nigerian conditions — heat, humidity, and the unexpected.
               </p>
             </article>

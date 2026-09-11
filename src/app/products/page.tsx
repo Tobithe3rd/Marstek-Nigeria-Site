@@ -24,7 +24,7 @@ export default function ProductsPage() {
                 <img
                   src={p.placeholderImage}
                   alt={p.name}
-                  className="w-full h-full object-cover transition-transform duration-700 ease-premium group-hover:scale-[1.05]"
+                  className="w-full h-full object-cover transition-transform duration-300 ease-premium group-hover:scale-[1.05]"
                   loading="lazy"
                 />
                 {/* Brand-tinted glass overlay */}

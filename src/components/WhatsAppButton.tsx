@@ -8,7 +8,7 @@ export default function WhatsAppButton() {
       href={url}
       target="_blank"
       rel="noopener noreferrer"
-      className="inline-flex items-center gap-3 bg-gradient-to-r from-brand to-brand-deep px-6 py-3 text-sm font-semibold text-white shadow-[0_8px_24px_rgba(3,180,255,0.35)] hover:shadow-[0_12px_32px_rgba(3,180,255,0.5)] hover:-translate-y-[2px] active:translate-y-0 active:shadow-[0_4px_12px_rgba(3,180,255,0.3)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 focus-visible:ring-offset-white disabled:opacity-40 disabled:cursor-not-allowed disabled:translate-y-0 transition-[transform,shadow] duration-300 ease-premium"
+      className="inline-flex items-center gap-3 bg-navy-deep px-6 py-3 text-sm font-semibold text-white shadow-[0_8px_24px_rgba(6,15,28,0.35)] hover:shadow-[0_12px_32px_rgba(6,15,28,0.5)] hover:-translate-y-[2px] active:translate-y-0 active:shadow-[0_4px_12px_rgba(6,15,28,0.3)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 focus-visible:ring-offset-white disabled:opacity-40 disabled:cursor-not-allowed disabled:translate-y-0 transition-[transform,shadow] duration-300 ease-premium"
       aria-label="Chat on WhatsApp with Marstek Nigeria"
     >
       <span className="inline-flex items-center justify-center w-7 h-7 bg-white/20 backdrop-blur-sm">
