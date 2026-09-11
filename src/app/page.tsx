@@ -36,7 +36,7 @@ export default function HomePage() {
         />
 
         <div className="relative mx-auto max-w-6xl px-[clamp(1.5rem,5vw,3rem)] md:px-[clamp(2rem,4vw,4rem)] pt-[clamp(6rem,16vw,14rem)] pb-[clamp(8rem,18vw,14rem)] md:pt-[clamp(9rem,14vw,14rem)] md:pb-[clamp(10rem,16vw,14rem)]">
-          <div className="max-w-md sm:max-w-2xl lg:max-w-3xl">
+          <div className="max-w-md sm:max-w-2xl lg:max-w-3xl animate-fade-up stagger">
             <h1 className="font-display text-hero font-normal leading-[1.02] tracking-tight text-white text-[clamp(2.5rem,7vw,5rem)] tracking-[-0.02em]">
               Reliable energy, <span className="italic text-brand-soft">anywhere</span> in Nigeria.
             </h1>
@@ -61,9 +61,11 @@ export default function HomePage() {
 
       {/* Feature intro — editorial 2-col, light background */}
       <section className="mx-auto max-w-5xl md:max-w-6xl px-[clamp(1.5rem,5vw,3rem)] md:px-[clamp(2rem,4vw,4rem)] py-[clamp(6rem,14vw,12rem)] md:py-[clamp(8rem,10vw,12rem)]">
-        <div className="grid md:grid-cols-[1fr_1.4fr] gap-12 md:gap-28 items-start">
+        <div className="grid md:grid-cols-[1fr_1.4fr] gap-[clamp(3rem,8vw,6rem)] md:gap-[clamp(4rem,6vw,6rem)] items-start stagger">
           <div>
-            <h2 className="font-display text-display font-normal tracking-tight text-black leading-[1.1] text-[clamp(2rem,5vw,3.5rem)] tracking-[-0.02em]">
+            <h2 className="font-display text-display font-normal tracking-tight text-black leading-[1.1] text-[clamp(2rem,5vw,3.5rem)] tracking-[-0.02em] animate-fade-up">
+              Built for Nigerian <span className="italic text-brand">conditions.</span>
+            </h2>
               Built for Nigerian <span className="italic text-brand">conditions.</span>
             </h2>
             <p className="mt-8 text-stone-text leading-[1.7] text-[1.05rem] md:text-lg">
@@ -113,9 +115,9 @@ export default function HomePage() {
             Three ways to stay <span className="italic text-brand-soft">powered.</span>
           </h2>
 
-          <div className="grid md:grid-cols-[1fr_1.2fr_1fr] gap-[clamp(1rem,2.5vw,1.5rem)] md:gap-[clamp(1.25rem,2vw,1.5rem)]">
+          <div className="grid md:grid-cols-[1fr_1.2fr_1fr] gap-[clamp(1rem,2.5vw,1.5rem)] md:gap-[clamp(1.25rem,2vw,1.5rem)] stagger">
             {/* Card 1 — glass surface with subtle radius */}
-            <article className="glass-card p-6 md:p-8 hover:-translate-y-[6px] hover:shadow-[0_28px_80px_rgba(3,180,255,0.12)] transition-[transform,shadow] duration-300 ease-premium">
+            <article className="glass-card p-6 md:p-8 hover:-translate-y-[6px] hover:shadow-[0_28px_80px_rgba(3,180,255,0.12)] transition-[transform,shadow] duration-300 ease-premium animate-fade-up">
               <div className="w-10 h-10 bg-brand/15 flex items-center justify-center mb-6 rounded-md">
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="text-brand">
                   <rect x="4" y="4" width="16" height="16" rx="3" />
@@ -130,7 +132,7 @@ export default function HomePage() {
             </article>
 
             {/* Card 2 — full-width middle, dark glass with image */}
-            <article className="md:col-span-1 glass-card-dark overflow-hidden hover:-translate-y-[6px] hover:shadow-[0_28px_80px_rgba(3,180,255,0.2)] transition-[transform,shadow] duration-300 ease-premium relative">
+            <article className="md:col-span-1 glass-card-dark overflow-hidden hover:-translate-y-[6px] hover:shadow-[0_28px_80px_rgba(3,180,255,0.2)] transition-[transform,shadow] duration-300 ease-premium animate-fade-up relative">
               <Image
                 src="/images/placeholder-600w-solar.png"
                 alt="Solar panel array"
@@ -148,7 +150,7 @@ export default function HomePage() {
             </article>
 
             {/* Card 3 — glass surface */}
-            <article className="glass-card p-6 md:p-8 hover:-translate-y-[6px] hover:shadow-[0_28px_80px_rgba(3,180,255,0.12)] transition-[transform,shadow] duration-300 ease-premium">
+            <article className="glass-card p-6 md:p-8 hover:-translate-y-[6px] hover:shadow-[0_28px_80px_rgba(3,180,255,0.12)] transition-[transform,shadow] duration-300 ease-premium animate-fade-up">
               <div className="w-10 h-10 bg-brand/15 flex items-center justify-center mb-6 rounded-md">
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="text-brand">
                   <circle cx="12" cy="12" r="10" />
