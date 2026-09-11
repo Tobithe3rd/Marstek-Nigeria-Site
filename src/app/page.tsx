@@ -35,7 +35,7 @@ export default function HomePage() {
           aria-hidden="true"
         />
 
-        <div className="relative mx-auto max-w-6xl px-[clamp(1.25rem,4vw,2rem)] md:px-[clamp(1.5rem,3vw,2.5rem)] pt-[clamp(5rem,14vw,11rem)] pb-[clamp(6rem,16vw,12rem)] md:pt-[clamp(7rem,12vw,11rem)] md:pb-[clamp(8rem,14vw,12rem)]">
+        <div className="relative mx-auto max-w-6xl px-[clamp(1.5rem,5vw,3rem)] md:px-[clamp(2rem,4vw,4rem)] pt-[clamp(6rem,16vw,14rem)] pb-[clamp(8rem,18vw,14rem)] md:pt-[clamp(9rem,14vw,14rem)] md:pb-[clamp(10rem,16vw,14rem)]">
           <div className="max-w-md sm:max-w-2xl lg:max-w-3xl">
             <h1 className="font-display text-hero font-normal leading-[1.02] tracking-tight text-white text-[clamp(2.5rem,7vw,5rem)] tracking-[-0.02em]">
               Reliable energy, <span className="italic text-brand-soft">anywhere</span> in Nigeria.
@@ -56,8 +56,11 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Spacer for breathing room between sections */}
+      <div className="h-[clamp(2rem,6vw,4rem)]" aria-hidden="true" />
+
       {/* Feature intro — editorial 2-col, light background */}
-      <section className="mx-auto max-w-5xl md:max-w-6xl px-[clamp(1.25rem,4vw,2rem)] md:px-[clamp(1.5rem,3vw,2.5rem)] py-[clamp(4rem,10vw,9rem)] md:py-[clamp(6rem,8vw,9rem)]">
+      <section className="mx-auto max-w-5xl md:max-w-6xl px-[clamp(1.5rem,5vw,3rem)] md:px-[clamp(2rem,4vw,4rem)] py-[clamp(6rem,14vw,12rem)] md:py-[clamp(8rem,10vw,12rem)]">
         <div className="grid md:grid-cols-[1fr_1.4fr] gap-12 md:gap-28 items-start">
           <div>
             <h2 className="font-display text-display font-normal tracking-tight text-black leading-[1.1] text-[clamp(2rem,5vw,3.5rem)] tracking-[-0.02em]">
@@ -100,9 +103,12 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Spacer for breathing room between sections */}
+      <div className="h-[clamp(2rem,6vw,4rem)]" aria-hidden="true" />
+
       {/* What we offer — dark glass cards with subtle radius */}
       <section className="bg-dark-section" aria-label="What we offer">
-        <div className="mx-auto max-w-6xl px-[clamp(1.25rem,4vw,2rem)] md:px-[clamp(1.5rem,3vw,2.5rem)] py-[clamp(4rem,10vw,8rem)] md:py-[clamp(5rem,9vw,8rem)]">
+        <div className="mx-auto max-w-6xl px-[clamp(1.5rem,5vw,3rem)] md:px-[clamp(2rem,4vw,4rem)] py-[clamp(6rem,14vw,12rem)] md:py-[clamp(8rem,10vw,12rem)]">
           <h2 className="font-display text-display font-normal tracking-tight text-white mb-16 md:mb-24 leading-[1.05] text-[clamp(2rem,5vw,3.5rem)]">
             Three ways to stay <span className="italic text-brand-soft">powered.</span>
           </h2>
