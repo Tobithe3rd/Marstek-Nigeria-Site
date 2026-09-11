@@ -46,11 +46,10 @@ export default function HomePage() {
             <div className="mt-12 flex flex-wrap items-center gap-4">
               <Link
                 href="/products"
-                className="inline-flex items-center bg-brand text-navy-deep px-8 py-4 text-sm font-bold tracking-tight shadow-[0_8px_28px_rgba(3,180,255,0.35)] hover:shadow-[0_12px_40px_rgba(3,180,255,0.45)] hover:-translate-y-[2px] active:translate-y-0 active:shadow-[0_4px_14px_rgba(3,180,255,0.3)] transition-[transform,shadow,background-color] duration-300 ease-premium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 focus-visible:ring-offset-navy-deep"
+                className="inline-flex items-center bg-brand text-navy-deep px-10 py-5 text-base font-bold tracking-tight shadow-[0_8px_28px_rgba(3,180,255,0.35)] hover:shadow-[0_12px_40px_rgba(3,180,255,0.45)] hover:-translate-y-[2px] active:translate-y-0 active:shadow-[0_4px_14px_rgba(3,180,255,0.3)] transition-[transform,shadow,background-color] duration-300 ease-premium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 focus-visible:ring-offset-navy-deep"
               >
                 View Products
               </Link>
-              <WhatsAppButton />
             </div>
           </div>
         </div>
@@ -165,6 +164,22 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* Floating WhatsApp badge — bottom right */}
+      <a
+        href="https://wa.me/2348000000000?text=Hello%2C%20I'm%20interested%20in%20Marstek%20products."
+        target="_blank"
+        rel="noopener noreferrer"
+        className="fixed bottom-6 right-6 z-50 inline-flex items-center gap-2 bg-brand text-navy-deep px-5 py-3.5 rounded-full text-sm font-bold shadow-[0_8px_24px_rgba(3,180,255,0.35)] hover:shadow-[0_12px_36px_rgba(3,180,255,0.55)] hover:-translate-y-[3px] active:translate-y-0 transition-[transform,shadow] duration-300 ease-premium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2"
+        aria-label="Chat on WhatsApp with Marstek Nigeria"
+      >
+        <span className="inline-flex items-center justify-center w-7 h-7 bg-white/20 rounded-full">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true" className="text-navy-deep">
+            <path d="M12 2C6.48 2 2 6.48 2 12c0 1.89.52 3.66 1.43 5.16L2 22l4.93-1.28A9.96 9.96 0 0012 22c5.52 0 10-4.48 10-10S17.52 2 12 2z" fill="currentColor" />
+          </svg>
+        </span>
+        <span className="hidden sm:inline">WhatsApp</span>
+      </a>
     </div>
   );
 }
