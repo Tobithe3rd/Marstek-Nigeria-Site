@@ -46,7 +46,7 @@ export default function HomePage() {
             <div className="mt-12 flex flex-wrap items-center gap-4">
               <Link
                 href="/products"
-                className="inline-flex items-center bg-brand text-navy-deep px-10 py-5 text-base font-bold tracking-tight shadow-[0_8px_28px_rgba(3,180,255,0.35)] hover:shadow-[0_12px_40px_rgba(3,180,255,0.45)] hover:-translate-y-[2px] active:translate-y-0 active:shadow-[0_4px_14px_rgba(3,180,255,0.3)] transition-[transform,shadow,background-color] duration-300 ease-premium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 focus-visible:ring-offset-navy-deep"
+                className="inline-flex items-center bg-brand text-navy-deep px-7 py-3.5 text-sm font-bold tracking-tight shadow-[0_8px_28px_rgba(3,180,255,0.35)] hover:shadow-[0_12px_40px_rgba(3,180,255,0.45)] hover:-translate-y-[2px] active:translate-y-0 active:shadow-[0_4px_14px_rgba(3,180,255,0.3)] transition-[transform,shadow,background-color] duration-300 ease-premium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 focus-visible:ring-offset-navy-deep"
               >
                 View Products
               </Link>
