@@ -1,3 +1,4 @@
+/* DESIGN READ: premium tech landing for Nigerian solar energy, Apple Liquid Glass + sharp-corner exception (radius-glass: 4px), brand blue #03B4FF, editorial serif + geometric sans pairing, dark/light rhythm. */
 import Link from "next/link";
 import Image from "next/image";
 import WhatsAppButton from "@/components/WhatsAppButton";
@@ -39,7 +40,7 @@ export default function HomePage() {
             <p className="text-xs md:text-sm font-mono uppercase tracking-[0.2em] text-brand-soft mb-8">
               Solar Energy / Portable Power / Nigeria
             </p>
-            <h1 className="font-display text-hero font-normal leading-[1.02] tracking-tight text-white text-[clamp(2.5rem,7vw,5rem)]">
+            <h1 className="font-display text-hero font-normal leading-[1.02] tracking-tight text-white text-[clamp(2.5rem,7vw,5rem)] tracking-[-0.02em]">
               Reliable energy, <span className="italic text-brand-soft">anywhere</span> in Nigeria.
             </h1>
             <p className="mt-8 text-base md:text-xl text-white/60 leading-relaxed max-w-md sm:max-w-lg lg:max-w-2xl">
@@ -62,7 +63,7 @@ export default function HomePage() {
       <section className="mx-auto max-w-5xl md:max-w-6xl px-6 md:px-8 py-24 md:py-36">
         <div className="grid md:grid-cols-[1fr_1.4fr] gap-12 md:gap-28 items-start">
           <div>
-            <h2 className="font-display text-display font-normal tracking-tight text-black leading-[1.1] text-[clamp(2rem,5vw,3.5rem)]">
+            <h2 className="font-display text-display font-normal tracking-tight text-black leading-[1.1] text-[clamp(2rem,5vw,3.5rem)] tracking-[-0.02em]">
               Built for Nigerian <span className="italic text-brand">conditions.</span>
             </h2>
             <p className="mt-8 text-stone-text leading-[1.7] text-[1.05rem] md:text-lg">

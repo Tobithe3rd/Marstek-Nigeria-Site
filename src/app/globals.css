@@ -78,6 +78,7 @@ body {
   font-family: var(--font-body);
   font-size: 1rem;
   line-height: 1.6;
+  letter-spacing: normal; /* Apple body tracking: tracking-normal (~0) for 13pt DM Sans */
 }
 
 /* Selection theming */
