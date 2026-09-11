@@ -37,14 +37,11 @@ export default function HomePage() {
 
         <div className="relative mx-auto max-w-6xl px-[clamp(1.25rem,4vw,2rem)] md:px-[clamp(1.5rem,3vw,2.5rem)] pt-[clamp(5rem,14vw,11rem)] pb-[clamp(6rem,16vw,12rem)] md:pt-[clamp(7rem,12vw,11rem)] md:pb-[clamp(8rem,14vw,12rem)]">
           <div className="max-w-md sm:max-w-2xl lg:max-w-3xl">
-            <p className="text-xs md:text-sm font-mono uppercase tracking-[0.2em] text-brand-soft mb-8">
-              Solar Energy / Portable Power / Nigeria
-            </p>
             <h1 className="font-display text-hero font-normal leading-[1.02] tracking-tight text-white text-[clamp(2.5rem,7vw,5rem)] tracking-[-0.02em]">
               Reliable energy, <span className="italic text-brand-soft">anywhere</span> in Nigeria.
             </h1>
-            <p className="mt-8 text-base md:text-xl text-white/60 leading-relaxed max-w-md sm:max-w-lg lg:max-w-2xl">
-              Portable power stations and solar panels designed for Nigerian conditions — heat, humidity, and the unpredictable rhythms of infrastructure. Built for homes, businesses, and communities across the country.
+            <p className="mt-6 text-sm md:text-base text-white/50 leading-relaxed max-w-md">
+              Portable solar power for homes, businesses, and communities — built for Nigerian heat and humidity.
             </p>
             <div className="mt-12 flex flex-wrap items-center gap-4">
               <Link
