@@ -61,8 +61,8 @@ export default function HomePage() {
 
       {/* Feature intro — editorial card, light glass background */}
       <section className="mx-auto max-w-5xl md:max-w-6xl px-[clamp(1.5rem,5vw,3rem)] md:px-[clamp(2rem,4vw,4rem)] py-[clamp(6rem,14vw,12rem)] md:py-[clamp(8rem,10vw,12rem)]">
-        <div className="glass-card p-8 md:p-14 md:rounded-xl">
-          <div className="grid md:grid-cols-[1fr_1.4fr] gap-10 md:gap-16 items-start">
+        <div className="glass-card p-10 md:p-16 md:rounded-2xl">
+          <div className="max-w-4xl mx-auto grid md:grid-cols-[1fr_1.4fr] gap-12 md:gap-20 items-center">
             <div>
               <h2 className="font-display text-display font-normal tracking-tight text-black leading-[1.1] text-[clamp(2rem,5vw,3.5rem)] tracking-[-0.02em] animate-fade-up">
                 Built for Nigerian <span className="italic text-brand">conditions.</span>
