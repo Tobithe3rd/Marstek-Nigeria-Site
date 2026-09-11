@@ -50,6 +50,7 @@ export default function HomePage() {
               >
                 View Products
               </Link>
+              <WhatsAppButton />
             </div>
           </div>
         </div>
@@ -165,21 +166,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Floating WhatsApp circle badge — bottom right */}
-      <a
-        href="https://wa.me/2348000000000?text=Hello%2C%20I'm%20interested%20in%20Marstek%20products."
-        target="_blank"
-        rel="noopener noreferrer"
-        className="group fixed bottom-10 right-10 z-50 w-20 h-20 flex items-center justify-center bg-[#25D366] text-white rounded-full shadow-[0_16px_48px_rgba(37,211,102,0.45)] hover:shadow-[0_24px_72px_rgba(37,211,102,0.65)] hover:-translate-y-[5px] hover:scale-110 active:translate-y-0 transition-[transform,shadow,scale] duration-300 ease-premium focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-[#25D366] focus-visible:ring-offset-4 overflow-visible"
-        aria-label="Chat on WhatsApp with Marstek Nigeria"
-      >
-        <span className="inline-flex items-center justify-center w-12 h-12 shrink-0 transition-transform duration-300 ease-premium group-hover:scale-110">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true" className="text-white">
-            <path d="M12 2C6.48 2 2 6.48 2 12c0 1.89.52 3.66 1.43 5.16L2 22l4.93-1.28A9.96 9.96 0 0012 22c5.52 0 10-4.48 10-10S17.52 2 12 2z" fill="currentColor" />
-          </svg>
-        </span>
-        <span className="absolute right-[72px] top-1/2 -translate-y-1/2 bg-[#25D366] text-white px-5 py-2.5 rounded-full text-base font-bold whitespace-nowrap shadow-[0_8px_24px_rgba(37,211,102,0.4)] opacity-0 translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-[opacity,transform] duration-300 ease-premium pointer-events-none">WhatsApp</span>
-      </a>
     </div>
   );
 }
