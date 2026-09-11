@@ -35,14 +35,14 @@ export default function HomePage() {
         />
 
         <div className="relative mx-auto max-w-6xl px-6 md:px-8 pt-32 pb-36 md:pt-44 md:pb-48">
-          <div className="max-w-xl sm:max-w-3xl">
+          <div className="max-w-md sm:max-w-2xl lg:max-w-3xl">
             <p className="text-xs md:text-sm font-mono uppercase tracking-[0.2em] text-brand-soft mb-8">
               Solar Energy / Portable Power / Nigeria
             </p>
             <h1 className="font-display text-hero font-normal leading-[1.02] tracking-tight text-white text-[clamp(2.75rem,8vw,6.5rem)]">
               Reliable energy, <span className="italic text-brand-soft">anywhere</span> in Nigeria.
             </h1>
-            <p className="mt-8 text-base md:text-xl text-white/60 leading-relaxed max-w-2xl">
+            <p className="mt-8 text-base md:text-xl text-white/60 leading-relaxed max-w-md sm:max-w-lg lg:max-w-2xl">
               Portable power stations and solar panels designed for Nigerian conditions — heat, humidity, and the unpredictable rhythms of infrastructure. Built for homes, businesses, and communities across the country.
             </p>
             <div className="mt-12 flex flex-wrap items-center gap-4">
@@ -59,7 +59,7 @@ export default function HomePage() {
       </section>
 
       {/* Feature intro — editorial 2-col, light background */}
-      <section className="mx-auto max-w-6xl px-6 md:px-8 py-28 md:py-40">
+      <section className="mx-auto max-w-5xl md:max-w-6xl px-6 md:px-8 py-24 md:py-36">
         <div className="grid md:grid-cols-[1fr_1.4fr] gap-12 md:gap-28 items-start">
           <div>
             <h2 className="font-display text-display font-normal tracking-tight text-black leading-[1.1] text-[clamp(2rem,5vw,3.5rem)]">
@@ -109,9 +109,9 @@ export default function HomePage() {
             Three ways to stay <span className="italic text-brand-soft">powered.</span>
           </h2>
 
-          <div className="grid md:grid-cols-[1fr_1.2fr_1fr] gap-8 md:gap-6">
+          <div className="grid md:grid-cols-[1fr_1.2fr_1fr] gap-6 md:gap-6">
             {/* Card 1 — glass surface with subtle radius */}
-            <article className="glass-card p-8 md:p-10 hover:-translate-y-[6px] hover:shadow-[0_28px_80px_rgba(3,180,255,0.12)] transition-[transform,shadow] duration-400 ease-premium">
+            <article className="glass-card p-6 md:p-8 hover:-translate-y-[6px] hover:shadow-[0_28px_80px_rgba(3,180,255,0.12)] transition-[transform,shadow] duration-400 ease-premium">
               <div className="w-10 h-10 bg-brand/15 flex items-center justify-center mb-6 rounded-md">
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="text-brand">
                   <rect x="4" y="4" width="16" height="16" rx="3" />
@@ -144,7 +144,7 @@ export default function HomePage() {
             </article>
 
             {/* Card 3 — glass surface */}
-            <article className="glass-card p-8 md:p-10 hover:-translate-y-[6px] hover:shadow-[0_28px_80px_rgba(3,180,255,0.12)] transition-[transform,shadow] duration-400 ease-premium">
+            <article className="glass-card p-6 md:p-8 hover:-translate-y-[6px] hover:shadow-[0_28px_80px_rgba(3,180,255,0.12)] transition-[transform,shadow] duration-400 ease-premium">
               <div className="w-10 h-10 bg-brand/15 flex items-center justify-center mb-6 rounded-md">
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="text-brand">
                   <circle cx="12" cy="12" r="10" />

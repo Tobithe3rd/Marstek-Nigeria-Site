@@ -1,6 +1,6 @@
 export default function AboutPage() {
   return (
-    <div className="mx-auto max-w-6xl px-6 md:px-8 py-16 md:py-28">
+    <div className="mx-auto max-w-5xl md:max-w-6xl px-6 md:px-8 py-16 md:py-28">
       <div className="grid md:grid-cols-[1fr_1.4fr] gap-16 md:gap-24">
         <div>
           <h1 className="font-display text-hero font-normal tracking-tight text-black leading-[1.05] text-[clamp(2rem,6vw,5rem)]">
