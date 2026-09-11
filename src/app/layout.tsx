@@ -26,7 +26,7 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
-  title: "Marstek Nigeria — Solar & Portable Power",
+  title: "Marstek Nigeria - Solar & Portable Power",
   description:
     "Reliable solar energy and portable power stations for Nigeria. 500W, 1000W, 2000W units and solar panels.",
 };

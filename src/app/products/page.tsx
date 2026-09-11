@@ -16,7 +16,7 @@ export default function ProductsPage() {
         {products.map((p) => (
           <article
             key={p.id}
-            className="group relative bg-white overflow-hidden border border-stone-warm/50 shadow-[0_2px_16px_rgba(10,22,40,0.04)] hover:shadow-[0_12px_40px_rgba(10,22,40,0.1)] hover:-translate-y-[3px] transition-all duration-400 ease-premium"
+            className="group relative bg-white overflow-hidden shadow-[0_2px_16px_rgba(10,22,40,0.04)] hover:shadow-[0_12px_40px_rgba(10,22,40,0.1)] hover:-translate-y-[3px] transition-[transform,shadow,opacity] duration-300 ease-premium"
           >
             {/* Image */}
             <a href="#" className="block relative overflow-hidden" aria-label={p.name}>

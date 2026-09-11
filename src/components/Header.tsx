@@ -48,6 +48,7 @@ export default function Header() {
 
         {/* Mobile hamburger */}
         <button
+          type="button"
           className="md:hidden flex flex-col gap-[5px] p-3 -mr-3 text-black hover:text-brand transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 focus-visible:ring-offset-white "
           onClick={() => setMobileOpen(!mobileOpen)}
           aria-label={mobileOpen ? "Close menu" : "Open menu"}
@@ -69,7 +70,7 @@ export default function Header() {
       {/* Mobile Menu */}
       <nav
         id="mobile-nav"
-        className={`md:hidden overflow-hidden transition-[max-height,opacity] duration-400 ease-premium ${mobileOpen ? "max-h-[400px] opacity-100" : "max-h-0 opacity-0"}`}
+        className={`md:hidden overflow-hidden transition-[max-height,opacity] duration-300 ease-premium ${mobileOpen ? "max-h-[400px] opacity-100" : "max-h-0 opacity-0"}`}
         aria-label="Mobile navigation"
       >
         <div className="mx-auto max-w-6xl px-5 md:px-8 pb-6 pt-2 flex flex-col gap-1 border-t border-brand/10">

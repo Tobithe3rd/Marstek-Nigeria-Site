@@ -15,6 +15,7 @@
   --color-white: #FFFFFF;
   --color-black: #000000;
   --color-stone-text: #6B6560;
+  --color-stone-warm: #F2F0EC;
   --color-stone-muted: #9E9A95;
 
   /* Spacing scale (4px base) */
@@ -86,7 +87,7 @@ body {
 }
 ::-webkit-scrollbar-thumb {
   background: var(--color-brand-soft);
-  border-radius: 4px;
+  border-radius: 0px;
 }
 ::-webkit-scrollbar-thumb:hover {
   background: var(--color-brand);
@@ -102,6 +103,23 @@ body {
 /* Focus hidden for mouse users, visible for keyboard */
 :focus:not(:focus-visible) {
   outline: none;
+}
+
+/* Reduced motion — respect user preference */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    transition-delay: 0s !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+h1, h2, h3 {
+  text-wrap: balance;
 }
 
 /* Smooth image loading */

@@ -33,7 +33,7 @@ export default function HomePage() {
         <div className="relative mx-auto max-w-6xl px-6 md:px-8 pt-28 pb-28 md:pt-40 md:pb-36">
           <div className="max-w-3xl">
             <p className="text-xs md:text-sm font-mono uppercase tracking-[0.2em] text-brand-soft mb-6">
-              Solar Energy &middot; Portable Power &middot; Nigeria
+              Solar Energy / Portable Power / Nigeria
             </p>
             <h1 className="font-display text-hero font-normal leading-[1.05] tracking-tight text-white">
               Reliable energy, <span className="italic text-brand-soft">anywhere</span> in Nigeria.
@@ -44,7 +44,7 @@ export default function HomePage() {
             <div className="mt-10 flex flex-wrap items-center gap-4">
               <Link
                 href="/products"
-                className="inline-flex items-center bg-brand text-navy-deep px-7 py-3.5 text-sm font-bold tracking-tight hover:bg-brand-soft transition-all duration-300 ease-premium hover:-translate-y-[2px] shadow-[0_8px_24px_rgba(3,180,255,0.35)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 focus-visible:ring-offset-navy-deep active:translate-y-0 active:shadow-[0_4px_12px_rgba(3,180,255,0.3)]"
+                className="inline-flex items-center bg-brand text-navy-deep px-7 py-3.5 text-sm font-bold tracking-tight hover:bg-brand-soft hover:-translate-y-[2px] shadow-[0_8px_24px_rgba(3,180,255,0.35)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 focus-visible:ring-offset-navy-deep active:translate-y-0 active:shadow-[0_4px_12px_rgba(3,180,255,0.3)] transition-[transform,shadow,background-color] duration-300 ease-premium"
               >
                 View Products
               </Link>
@@ -107,7 +107,7 @@ export default function HomePage() {
 
           <div className="grid md:grid-cols-[1fr_1.2fr_1fr] gap-10 md:gap-8">
             {/* Card 1 - wider content */}
-            <article className="bg-white p-8 md:p-10 shadow-[0_4px_20px_rgba(10,22,40,0.06)] border border-stone-warm/60 hover:shadow-[0_12px_40px_rgba(10,22,40,0.1)] transition-shadow duration-400 ease-premium">
+            <article className="bg-white p-8 md:p-10 shadow-[0_4px_20px_rgba(10,22,40,0.06)] hover:shadow-[0_12px_40px_rgba(10,22,40,0.1)] transition-shadow duration-300 ease-premium">
               <div className="w-10 h-10 bg-brand/10 flex items-center justify-center mb-6">
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="text-brand">
                   <rect x="4" y="4" width="16" height="16" rx="3" />
@@ -122,7 +122,7 @@ export default function HomePage() {
             </article>
 
             {/* Card 2 - full-width middle on desktop with image */}
-            <article className="md:col-span-1 bg-navy-deep overflow-hidden shadow-[0_8px_30px_rgba(10,22,40,0.15)] hover:shadow-[0_16px_50px_rgba(10,22,40,0.2)] transition-shadow duration-400 ease-premium relative">
+            <article className="md:col-span-1 bg-navy-deep overflow-hidden shadow-[0_8px_30px_rgba(10,22,40,0.15)] hover:shadow-[0_16px_50px_rgba(10,22,40,0.2)] transition-shadow duration-300 ease-premium relative">
               <Image
                 src="/images/placeholder-600w-solar.png"
                 alt="Solar panel array"
@@ -139,7 +139,7 @@ export default function HomePage() {
             </article>
 
             {/* Card 3 - compact */}
-            <article className="bg-white p-8 md:p-10 shadow-[0_4px_20px_rgba(10,22,40,0.06)] border border-stone-warm/60 hover:shadow-[0_12px_40px_rgba(10,22,40,0.1)] transition-shadow duration-400 ease-premium">
+            <article className="bg-white p-8 md:p-10 shadow-[0_4px_20px_rgba(10,22,40,0.06)] hover:shadow-[0_12px_40px_rgba(10,22,40,0.1)] transition-shadow duration-300 ease-premium">
               <div className="w-10 h-10 bg-brand/10 flex items-center justify-center mb-6">
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="text-brand">
                   <circle cx="12" cy="12" r="10" />
