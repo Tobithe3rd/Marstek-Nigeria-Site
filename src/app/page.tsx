@@ -59,44 +59,46 @@ export default function HomePage() {
       {/* Spacer for breathing room between sections */}
       <div className="h-[clamp(2rem,6vw,4rem)]" aria-hidden="true" />
 
-      {/* Feature intro — editorial 2-col, light background */}
+      {/* Feature intro — editorial card, light glass background */}
       <section className="mx-auto max-w-5xl md:max-w-6xl px-[clamp(1.5rem,5vw,3rem)] md:px-[clamp(2rem,4vw,4rem)] py-[clamp(6rem,14vw,12rem)] md:py-[clamp(8rem,10vw,12rem)]">
-        <div className="grid md:grid-cols-[1fr_1.4fr] gap-[clamp(3rem,8vw,6rem)] md:gap-[clamp(4rem,6vw,6rem)] items-start stagger">
-          <div>
-            <h2 className="font-display text-display font-normal tracking-tight text-black leading-[1.1] text-[clamp(2rem,5vw,3.5rem)] tracking-[-0.02em] animate-fade-up">
-              Built for Nigerian <span className="italic text-brand">conditions.</span>
-            </h2>
-            <p className="mt-8 text-stone-text leading-[1.7] text-[1.05rem] md:text-lg">
-              From dense urban neighborhoods to remote rural sites, our portable power stations and solar panels are selected for the realities Nigerian users face every day — intense heat, high humidity, and an infrastructure that demands self-reliance.
-            </p>
-            <div className="mt-10 flex flex-wrap gap-x-10 gap-y-4 text-sm font-mono text-stone-muted">
-              <div>
-                <span className="block text-2xl font-display text-black font-normal">500W</span>
-                <span>Small backup</span>
-              </div>
-              <div>
-                <span className="block text-2xl font-display text-black font-normal">1000W</span>
-                <span>Home office</span>
-              </div>
-              <div>
-                <span className="block text-2xl font-display text-black font-normal">2000W</span>
-                <span>Full home</span>
+        <div className="glass-card p-8 md:p-14 md:rounded-xl">
+          <div className="grid md:grid-cols-[1fr_1.4fr] gap-10 md:gap-16 items-start">
+            <div>
+              <h2 className="font-display text-display font-normal tracking-tight text-black leading-[1.1] text-[clamp(2rem,5vw,3.5rem)] tracking-[-0.02em] animate-fade-up">
+                Built for Nigerian <span className="italic text-brand">conditions.</span>
+              </h2>
+              <p className="mt-6 text-stone-text leading-[1.7] text-[1.05rem] md:text-lg">
+                From dense urban neighborhoods to remote rural sites, our portable power stations and solar panels are selected for the realities Nigerian users face every day — intense heat, high humidity, and an infrastructure that demands self-reliance.
+              </p>
+              <div className="mt-10 flex flex-wrap gap-x-10 gap-y-4 text-sm font-mono text-stone-muted">
+                <div>
+                  <span className="block text-3xl font-display text-black font-normal">500W</span>
+                  <span>Small backup</span>
+                </div>
+                <div>
+                  <span className="block text-3xl font-display text-black font-normal">1000W</span>
+                  <span>Home office</span>
+                </div>
+                <div>
+                  <span className="block text-3xl font-display text-black font-normal">2000W</span>
+                  <span>Full home</span>
+                </div>
               </div>
             </div>
-          </div>
-          <div className="relative">
-            <div className="relative overflow-hidden shadow-[0_30px_80px_rgba(10,22,40,0.22)] aspect-[4/5] rounded-md">
-              <Image
-                src="/images/hero-placeholder.jpg"
-                alt="Solar panel installation in Nigeria"
-                fill
-                className="object-cover"
-                sizes="(max-width: 768px) 100vw, 50vw"
-                priority
-              />
-              <div className="absolute bottom-6 left-6 bg-navy-deep/70 backdrop-blur-md px-5 py-3 rounded-md">
-                <p className="text-[10px] font-mono uppercase tracking-wider text-white/50">Phase 1 — Placeholders</p>
-                <p className="text-xs font-semibold text-white">Placeholder imagery</p>
+            <div className="relative">
+              <div className="relative overflow-hidden shadow-[0_30px_80px_rgba(10,22,40,0.22)] aspect-[4/5] rounded-lg">
+                <Image
+                  src="/images/hero-placeholder.jpg"
+                  alt="Solar panel installation in Nigeria"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  priority
+                />
+                <div className="absolute bottom-6 left-6 bg-navy-deep/70 backdrop-blur-md px-5 py-3 rounded-md">
+                  <p className="text-[10px] font-mono uppercase tracking-wider text-white/50">Phase 1 — Placeholders</p>
+                  <p className="text-xs font-semibold text-white">Placeholder imagery</p>
+                </div>
               </div>
             </div>
           </div>
