@@ -2,7 +2,7 @@ import { products } from "@/lib/products";
 
 export default function ProductsPage() {
   return (
-    <div className="mx-auto max-w-5xl md:max-w-6xl px-6 md:px-8 py-16 md:py-28">
+    <div className="mx-auto max-w-5xl md:max-w-6xl px-[clamp(1.5rem,5vw,3rem)] md:px-[clamp(2rem,4vw,4rem)] py-[clamp(6rem,14vw,12rem)] md:py-[clamp(8rem,10vw,12rem)]">
       <header className="max-w-xl sm:max-w-2xl">
         <h1 className="font-display text-hero font-normal tracking-tight text-black leading-[1.05] text-[clamp(2.25rem,6vw,4.5rem)]">
           Products
@@ -12,7 +12,7 @@ export default function ProductsPage() {
         </p>
       </header>
 
-      <div className="mt-16 md:mt-24 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+      <div className="mt-[clamp(4rem,10vw,7rem)] md:mt-[clamp(6rem,8vw,7rem)] grid gap-[clamp(1.5rem,4vw,2.5rem)] md:grid-cols-2 lg:grid-cols-3">
         {products.map((p) => (
           <article
             key={p.id}

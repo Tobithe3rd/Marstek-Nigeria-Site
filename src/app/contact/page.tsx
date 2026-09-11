@@ -2,8 +2,8 @@ import WhatsAppButton from "@/components/WhatsAppButton";
 
 export default function ContactPage() {
   return (
-    <div className="mx-auto max-w-5xl md:max-w-6xl px-6 md:px-8 py-16 md:py-28">
-      <div className="grid md:grid-cols-[1.2fr_1fr] gap-16 md:gap-24 items-start">
+    <div className="mx-auto max-w-5xl md:max-w-6xl px-[clamp(1.5rem,5vw,3rem)] md:px-[clamp(2rem,4vw,4rem)] py-[clamp(6rem,14vw,12rem)] md:py-[clamp(8rem,10vw,12rem)]">
+      <div className="grid md:grid-cols-[1.2fr_1fr] gap-[clamp(3rem,8vw,6rem)] md:gap-[clamp(4rem,6vw,6rem)] items-start">
         <div>
           <h1 className="font-display text-hero font-normal tracking-tight text-black leading-[1.05] text-[clamp(2.25rem,6vw,4.5rem)]">
             Get in <span className="italic text-brand">touch.</span>
