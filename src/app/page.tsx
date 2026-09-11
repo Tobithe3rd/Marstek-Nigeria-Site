@@ -8,7 +8,7 @@ export default function HomePage() {
     <div>
       {/* Hero — dark navy-deep with enhanced brand glow */}
       <section
-        className="relative overflow-hidden bg-navy-deep text-white min-h-screen flex flex-col"
+        className="relative overflow-hidden bg-navy-deep text-white"
         aria-label="Hero"
       >
         {/* Subtle geometric solar pattern — lowered opacity for premium depth */}
@@ -35,7 +35,7 @@ export default function HomePage() {
           aria-hidden="true"
         />
 
-        <div className="relative mx-auto max-w-6xl px-[clamp(1.5rem,5vw,3rem)] md:px-[clamp(2rem,4vw,4rem)] pt-[clamp(8rem,20vh,14rem)] pb-[clamp(8rem,18vw,14rem)] md:pt-[clamp(10rem,15vh,14rem)] md:pb-[clamp(10rem,16vh,14rem)] flex-1 flex flex-col justify-center">
+        <div className="relative mx-auto max-w-6xl px-[clamp(1.5rem,5vw,3rem)] md:px-[clamp(2rem,4vw,4rem)] pt-[clamp(6rem,16vw,14rem)] pb-[clamp(8rem,18vw,14rem)] md:pt-[clamp(9rem,14vw,14rem)] md:pb-[clamp(10rem,16vw,14rem)]">
           <div className="max-w-md sm:max-w-2xl lg:max-w-3xl animate-fade-up stagger">
             <h1 className="font-display text-hero font-normal leading-[1.02] tracking-tight text-white text-[clamp(2.5rem,7vw,5rem)] tracking-[-0.02em]">
               Reliable energy, <span className="italic text-brand-soft">anywhere</span> in Nigeria.
