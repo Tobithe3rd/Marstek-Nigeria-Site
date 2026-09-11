@@ -1,26 +1,112 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-display: "DM Serif Display", Georgia, serif;
+  --font-body: "DM Sans", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+
+  /* Solar / Energy Palette */
+  /* Marstek Global Brand Palette (Updated) */
+  --color-brand: #03B4FF;
+  --color-brand-deep: #0093D6;
+  --color-brand-soft: #52C2F5;
+  --color-navy: #0A1628;
+  --color-navy-deep: #060F1C;
+  --color-white: #FFFFFF;
+  --color-black: #000000;
+  --color-stone-text: #6B6560;
+  --color-stone-muted: #9E9A95;
+
+  /* Spacing scale (4px base) */
+  --spacing-4: 0.25rem;   /* 4px */
+  --spacing-6: 0.375rem;  /* 6px */
+  --spacing-8: 0.5rem;    /* 8px */
+  --spacing-12: 0.75rem;  /* 12px */
+  --spacing-16: 1rem;     /* 16px */
+  --spacing-20: 1.25rem;  /* 20px */
+  --spacing-24: 1.5rem;   /* 24px */
+  --spacing-32: 2rem;     /* 32px */
+  --spacing-48: 3rem;     /* 48px */
+  --spacing-64: 4rem;     /* 64px */
+  --spacing-80: 5rem;     /* 80px */
+  --spacing-96: 6rem;     /* 96px */
+  --spacing-128: 8rem;    /* 128px */
+
+  --radius-sm: 0px;
+  --radius-md: 0px;
+  --radius-lg: 0px;
+  --radius-xl: 0px;
+
+  --ease-premium: cubic-bezier(0.23, 1, 0.32, 1);
+  --ease-in-out: cubic-bezier(0.77, 0, 0.175, 1);
+
+  /* Typography scale */
+  --text-hero: clamp(2.5rem, 7vw, 5.5rem);
+  --text-display: clamp(1.75rem, 4vw, 3rem);
+  --text-body-lg: 1.125rem;
+  --text-body: 1rem;
+  --text-small: 0.875rem;
+  --text-xs: 0.75rem;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+:root {
+  --background: var(--color-white);
+  --foreground: var(--color-black);
+}
+
+/* Font face imports via next/font (configured in layout) */
+/* Using CSS variables set by next/font below */
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-white);
+  color: var(--color-black);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Selection theming */
+::selection {
+  background: rgba(3, 180, 255, 0.2);
+  color: var(--color-black);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-white);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-brand-soft);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-brand);
+}
+
+/* Focus rings — accessible, premium */
+:focus-visible {
+  outline: 2px solid var(--color-brand);
+  outline-offset: 3px;
+  border-radius: var(--radius-sm);
+}
+
+/* Focus hidden for mouse users, visible for keyboard */
+:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* Smooth image loading */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }

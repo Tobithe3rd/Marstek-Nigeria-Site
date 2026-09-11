@@ -1,5 +1,5 @@
 export default function WhatsAppButton() {
-  const phone = "2348000000000"; // placeholder — replace with Marstek Nigeria number
+  const phone = "2348000000000"; // placeholder — replace with real Marstek number
   const message = "Hello, I'm interested in Marstek products.";
   const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
 
@@ -8,16 +8,18 @@ export default function WhatsAppButton() {
       href={url}
       target="_blank"
       rel="noopener noreferrer"
-      className="inline-flex items-center gap-2 rounded-full bg-green-600 px-4 py-2 text-sm font-medium text-white shadow hover:bg-green-700 transition-colors"
-      aria-label="Chat on WhatsApp"
+      className="inline-flex items-center gap-3 bg-gradient-to-r from-brand to-brand-deep px-6 py-3 text-sm font-semibold text-white shadow-[0_8px_24px_rgba(3,180,255,0.35)] transition-all duration-300 ease-premium hover:shadow-[0_12px_32px_rgba(3,180,255,0.5)] hover:-translate-y-[2px] active:translate-y-0 active:shadow-[0_4px_12px_rgba(3,180,255,0.3)] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+      aria-label="Chat on WhatsApp with Marstek Nigeria"
     >
-      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-        <path
-          d="M12 2C6.48 2 2 6.48 2 12c0 1.89.52 3.66 1.43 5.16L2 22l4.93-1.28A9.96 9.96 0 0012 22c5.52 0 10-4.48 10-10S17.52 2 12 2z"
-          fill="currentColor"
-        />
-      </svg>
-      Chat on WhatsApp
+      <span className="inline-flex items-center justify-center w-7 h-7 bg-white/20 backdrop-blur-sm">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true" className="text-white">
+          <path
+            d="M12 2C6.48 2 2 6.48 2 12c0 1.89.52 3.66 1.43 5.16L2 22l4.93-1.28A9.96 9.96 0 0012 22c5.52 0 10-4.48 10-10S17.52 2 12 2z"
+            fill="currentColor"
+          />
+        </svg>
+      </span>
+      <span>Chat on WhatsApp</span>
     </a>
   );
 }

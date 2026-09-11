@@ -1,0 +1,17 @@
+{
+  "detector": {
+    "ignoreRules": [],
+    "ignoreFiles": [],
+    "ignoreValues": [
+      {
+        "rule": "overused-font",
+        "value": "arial",
+        "files": [
+          "src/app/globals.css"
+        ],
+        "createdAt": "2026-09-09T19:56:01.624Z",
+        "reason": "Placeholder font for Phase 1; final design later with design-taste skill"
+      }
+    ]
+  }
+}
