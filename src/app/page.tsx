@@ -66,8 +66,6 @@ export default function HomePage() {
             <h2 className="font-display text-display font-normal tracking-tight text-black leading-[1.1] text-[clamp(2rem,5vw,3.5rem)] tracking-[-0.02em] animate-fade-up">
               Built for Nigerian <span className="italic text-brand">conditions.</span>
             </h2>
-              Built for Nigerian <span className="italic text-brand">conditions.</span>
-            </h2>
             <p className="mt-8 text-stone-text leading-[1.7] text-[1.05rem] md:text-lg">
               From dense urban neighborhoods to remote rural sites, our portable power stations and solar panels are selected for the realities Nigerian users face every day — intense heat, high humidity, and an infrastructure that demands self-reliance.
             </p>
