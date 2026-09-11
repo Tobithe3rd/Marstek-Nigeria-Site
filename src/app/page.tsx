@@ -170,15 +170,15 @@ export default function HomePage() {
         href="https://wa.me/2348000000000?text=Hello%2C%20I'm%20interested%20in%20Marstek%20products."
         target="_blank"
         rel="noopener noreferrer"
-        className="group fixed bottom-6 right-6 z-50 inline-flex items-center gap-2 bg-brand text-navy-deep px-4 py-3 rounded-full text-sm font-bold shadow-[0_8px_24px_rgba(3,180,255,0.35)] hover:shadow-[0_12px_36px_rgba(3,180,255,0.55)] hover:-translate-y-[3px] hover:px-5 hover:py-3.5 hover:w-auto active:translate-y-0 transition-[transform,shadow,width,padding] duration-300 ease-premium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 overflow-hidden"
+        className="group fixed bottom-8 right-8 z-50 inline-flex items-center gap-3 bg-brand text-navy-deep px-6 py-5 rounded-full text-lg font-bold shadow-[0_12px_36px_rgba(3,180,255,0.4)] hover:shadow-[0_16px_48px_rgba(3,180,255,0.6)] hover:-translate-y-[4px] active:translate-y-0 transition-[transform,shadow] duration-300 ease-premium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-4"
         aria-label="Chat on WhatsApp with Marstek Nigeria"
       >
-        <span className="inline-flex items-center justify-center w-7 h-7 bg-white/20 rounded-full shrink-0">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true" className="text-navy-deep">
+        <span className="inline-flex items-center justify-center w-10 h-10 bg-white/25 rounded-full shrink-0">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true" className="text-navy-deep">
             <path d="M12 2C6.48 2 2 6.48 2 12c0 1.89.52 3.66 1.43 5.16L2 22l4.93-1.28A9.96 9.96 0 0012 22c5.52 0 10-4.48 10-10S17.52 2 12 2z" fill="currentColor" />
           </svg>
         </span>
-        <span className="hidden max-w-0 overflow-hidden whitespace-nowrap group-hover:inline-block group-hover:max-w-xs group-hover:ml-1 transition-all duration-300 ease-premium">WhatsApp</span>
+        <span className="hidden max-w-0 overflow-hidden whitespace-nowrap group-hover:inline-block group-hover:max-w-[120px] group-hover:ml-2 transition-all duration-300 ease-premium text-base">WhatsApp</span>
       </a>
     </div>
   );
