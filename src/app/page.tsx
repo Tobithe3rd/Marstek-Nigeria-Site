@@ -39,7 +39,7 @@ export default function HomePage() {
             <p className="text-xs md:text-sm font-mono uppercase tracking-[0.2em] text-brand-soft mb-8">
               Solar Energy / Portable Power / Nigeria
             </p>
-            <h1 className="font-display text-hero font-normal leading-[1.02] tracking-tight text-white text-[clamp(2.75rem,8vw,6.5rem)]">
+            <h1 className="font-display text-hero font-normal leading-[1.02] tracking-tight text-white text-[clamp(2.5rem,7vw,5rem)]">
               Reliable energy, <span className="italic text-brand-soft">anywhere</span> in Nigeria.
             </h1>
             <p className="mt-8 text-base md:text-xl text-white/60 leading-relaxed max-w-md sm:max-w-lg lg:max-w-2xl">
@@ -70,15 +70,15 @@ export default function HomePage() {
             </p>
             <div className="mt-10 flex flex-wrap gap-x-10 gap-y-4 text-sm font-mono text-stone-muted">
               <div>
-                <span className="block text-3xl font-display text-black font-normal">500W</span>
+                <span className="block text-2xl font-display text-black font-normal">500W</span>
                 <span>Small backup</span>
               </div>
               <div>
-                <span className="block text-3xl font-display text-black font-normal">1000W</span>
+                <span className="block text-2xl font-display text-black font-normal">1000W</span>
                 <span>Home office</span>
               </div>
               <div>
-                <span className="block text-3xl font-display text-black font-normal">2000W</span>
+                <span className="block text-2xl font-display text-black font-normal">2000W</span>
                 <span>Full home</span>
               </div>
             </div>

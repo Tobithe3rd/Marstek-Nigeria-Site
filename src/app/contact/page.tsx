@@ -15,17 +15,17 @@ export default function ContactPage() {
             </p>
             <address className="not-italic space-y-4 text-sm md:text-base">
               <div>
-                <span className="block text-[0.65rem] font-mono uppercase tracking-[0.15em] text-stone-muted mb-1">Email</span>
+                <span className="block text-xs font-mono uppercase tracking-[0.15em] text-stone-muted mb-1">Email</span>
                 <a href="mailto:hello@marsteknigeria.com" className="text-black hover:text-brand transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 focus-visible:ring-offset-white font-medium">
                   hello@marsteknigeria.com
                 </a>
               </div>
               <div>
-                <span className="block text-[0.65rem] font-mono uppercase tracking-[0.15em] text-stone-muted mb-1">Phone</span>
+                <span className="block text-xs font-mono uppercase tracking-[0.15em] text-stone-muted mb-1">Phone</span>
                 <span className="text-stone-muted">+234 800 000 0000 (placeholder)</span>
               </div>
               <div>
-                <span className="block text-[0.65rem] font-mono uppercase tracking-[0.15em] text-stone-muted mb-1">Location</span>
+                <span className="block text-xs font-mono uppercase tracking-[0.15em] text-stone-muted mb-1">Location</span>
                 <span className="text-stone-muted">Lagos, Nigeria</span>
               </div>
             </address>

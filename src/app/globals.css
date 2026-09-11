@@ -123,7 +123,7 @@ body {
   background: linear-gradient(180deg, #060F1C 0%, #0A1628 100%);
 }
 
-/* Focus rings — accessible, premium */
+/* Focus rings - accessible, premium */
 :focus-visible {
   outline: 2px solid var(--color-brand);
   outline-offset: 3px;

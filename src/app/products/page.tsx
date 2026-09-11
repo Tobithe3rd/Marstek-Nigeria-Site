@@ -40,7 +40,7 @@ export default function ProductsPage() {
                     {p.name}
                   </a>
                 </h3>
-                <span className="inline-flex shrink-0 bg-brand/10 px-2.5 py-0.5 text-[0.65rem] font-mono font-medium uppercase tracking-wide text-brand rounded-sm">
+                <span className="inline-flex shrink-0 bg-brand/10 px-2.5 py-0.5 text-xs font-mono font-medium uppercase tracking-wide text-brand rounded-sm">
                   {p.category === "power-station" ? "Station" : "Solar"}
                 </span>
               </div>
@@ -53,7 +53,7 @@ export default function ProductsPage() {
               <dl className="grid grid-cols-2 gap-x-6 gap-y-3 mb-5">
                 {Object.entries(p.specs).map(([key, value]) => (
                   <div key={key}>
-                    <dt className="text-[0.65rem] font-mono uppercase tracking-[0.08em] text-stone-muted leading-none">
+                    <dt className="text-xs font-mono uppercase tracking-[0.08em] text-stone-muted leading-none">
                       {key}
                     </dt>
                     <dd className="text-sm font-medium text-black mt-1 leading-snug font-body">
