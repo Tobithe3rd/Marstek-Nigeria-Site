@@ -170,7 +170,7 @@ export default function HomePage() {
         href="https://wa.me/2348000000000?text=Hello%2C%20I'm%20interested%20in%20Marstek%20products."
         target="_blank"
         rel="noopener noreferrer"
-        className="group fixed bottom-8 right-8 z-50 w-16 h-16 flex items-center justify-center bg-[#25D366] text-white rounded-full shadow-[0_12px_40px_rgba(37,211,102,0.4)] hover:shadow-[0_20px_60px_rgba(37,211,102,0.6)] hover:-translate-y-[4px] hover:scale-110 active:translate-y-0 transition-[transform,shadow,scale] duration-300 ease-premium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#25D366] focus-visible:ring-offset-4 overflow-visible"
+        className="group fixed bottom-10 right-10 z-50 w-20 h-20 flex items-center justify-center bg-[#25D366] text-white rounded-full shadow-[0_16px_48px_rgba(37,211,102,0.45)] hover:shadow-[0_24px_72px_rgba(37,211,102,0.65)] hover:-translate-y-[5px] hover:scale-110 active:translate-y-0 transition-[transform,shadow,scale] duration-300 ease-premium focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-[#25D366] focus-visible:ring-offset-4 overflow-visible"
         aria-label="Chat on WhatsApp with Marstek Nigeria"
       >
         <span className="inline-flex items-center justify-center w-12 h-12 shrink-0 transition-transform duration-300 ease-premium group-hover:scale-110">
