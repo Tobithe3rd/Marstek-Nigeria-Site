@@ -14,7 +14,7 @@ export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 bg-gradient-to-r from-[#F0F7FA] via-[#E0F2FB] to-brand border-b border-brand/10 backdrop-blur-md">
+    <header className="sticky top-0 z-50 bg-gradient-to-r from-[#F0F7FA]/90 via-[#E0F2FB]/85 to-brand/90 border-b border-brand/10 backdrop-blur-sm">
       <div className="mx-auto max-w-6xl px-5 md:px-8 h-[72px] flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="block h-[42px] md:h-[48px] w-auto shrink-0 hover:opacity-90 transition-opacity duration-300 ease-premium focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 focus-visible:ring-offset-white " aria-label="Marstek Nigeria home">

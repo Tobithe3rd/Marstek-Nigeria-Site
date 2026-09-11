@@ -33,10 +33,18 @@
   --spacing-96: 6rem;     /* 96px */
   --spacing-128: 8rem;    /* 128px */
 
+  /* Depth / elevation tokens */
+  --shadow-sm: 0 2px 8px rgba(10, 22, 40, 0.08);
+  --shadow-md: 0 8px 30px rgba(10, 22, 40, 0.15);
+  --shadow-lg: 0 20px 60px rgba(10, 22, 40, 0.2);
+  --shadow-glow-brand: 0 0 60px rgba(3, 180, 255, 0.15);
+
   --radius-sm: 0px;
   --radius-md: 0px;
   --radius-lg: 0px;
   --radius-xl: 0px;
+  /* Glass material exception: subtle radius ONLY for glass surfaces */
+  --radius-glass: 4px;
 
   --ease-premium: cubic-bezier(0.23, 1, 0.32, 1);
   --ease-in-out: cubic-bezier(0.77, 0, 0.175, 1);
@@ -91,6 +99,28 @@ body {
 }
 ::-webkit-scrollbar-thumb:hover {
   background: var(--color-brand);
+}
+
+/* Glass material utilities — ONLY for glass card surfaces */
+.glass-card {
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(16px) saturate(120%);
+  -webkit-backdrop-filter: blur(16px) saturate(120%);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-glass);
+  box-shadow: var(--shadow-md);
+}
+.glass-card-dark {
+  background: rgba(10, 22, 40, 0.55);
+  backdrop-filter: blur(16px) saturate(120%);
+  -webkit-backdrop-filter: blur(16px) saturate(120%);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: var(--radius-glass);
+  box-shadow: var(--shadow-lg);
+}
+/* Dark section background */
+.bg-dark-section {
+  background: linear-gradient(180deg, #060F1C 0%, #0A1628 100%);
 }
 
 /* Focus rings — accessible, premium */

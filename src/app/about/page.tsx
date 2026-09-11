@@ -3,7 +3,7 @@ export default function AboutPage() {
     <div className="mx-auto max-w-6xl px-6 md:px-8 py-16 md:py-28">
       <div className="grid md:grid-cols-[1fr_1.4fr] gap-16 md:gap-24">
         <div>
-          <h1 className="font-display text-hero font-normal tracking-tight text-black leading-[1.05]">
+          <h1 className="font-display text-hero font-normal tracking-tight text-black leading-[1.05] text-[clamp(2rem,6vw,5rem)]">
             About <span className="italic text-brand">Marstek</span>
           </h1>
           <div className="mt-6 w-16 h-[3px] bg-gradient-to-r from-brand to-brand-soft " aria-hidden="true" />
