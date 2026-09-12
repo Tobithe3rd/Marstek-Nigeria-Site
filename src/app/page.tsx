@@ -2,9 +2,9 @@
 import Link from "next/link";
 import Image from "next/image";
 import WhatsAppButton from "@/components/WhatsAppButton";
-import { CarouselArrows } from "@/components/CarouselArrows";
 import { FAQAccordion } from "@/components/FAQAccordion";
-import { products } from "@/lib/products";
+import { ProductsMarquee } from "@/components/ProductsMarquee";
+import { ScrollReveal } from "@/components/ScrollReveal";
 
 export default function HomePage() {
   return (
@@ -66,6 +66,7 @@ export default function HomePage() {
       <div className="h-[clamp(2rem,6vw,4rem)]" aria-hidden="true" />
 
       {/* Feature intro — editorial card, light glass background */}
+      <ScrollReveal delay={150}>
       <section className="mx-auto max-w-5xl md:max-w-6xl px-[clamp(1.5rem,5vw,3rem)] md:px-[clamp(2rem,4vw,4rem)] py-[clamp(6rem,14vw,12rem)] md:py-[clamp(8rem,10vw,12rem)]">
         <div className="glass-card p-[clamp(1.5rem,4vw,2.5rem)] md:p-[clamp(2.5rem,4vw,4rem)] md:rounded-2xl">
           <div className="max-w-4xl mx-auto grid md:grid-cols-[1fr_1.4fr] gap-12 md:gap-20 items-center">
@@ -110,11 +111,18 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+      </ScrollReveal>
 
       {/* Spacer for breathing room between sections */}
       <div className="h-[clamp(2rem,6vw,4rem)]" aria-hidden="true" />
 
+      {/* Subtle decorative divider between feature intro and what we offer */}
+      <div className="mx-auto max-w-6xl px-[clamp(1.5rem,5vw,3rem)] md:px-[clamp(2rem,4vw,4rem)] py-[clamp(2rem,6vw,4rem)]" aria-hidden="true">
+        <div className="h-px w-full bg-gradient-to-r from-transparent via-brand/20 to-transparent" />
+      </div>
+
       {/* What we offer — dark glass cards with subtle radius */}
+      <ScrollReveal delay={100}>
       <section className="bg-dark-section" aria-label="What we offer">
         <div className="mx-auto max-w-6xl px-[clamp(1.5rem,5vw,3rem)] md:px-[clamp(2rem,4vw,4rem)] py-[clamp(6rem,14vw,12rem)] md:py-[clamp(8rem,10vw,12rem)]">
           <h2 className="font-display text-display font-normal tracking-tight text-white mb-16 md:mb-24 leading-[1.05] text-[clamp(2rem,5vw,3.5rem)]">
@@ -171,8 +179,10 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+      </ScrollReveal>
 
-      {/* Products Carousel — reuse product data */}
+      {/* Products Marquee — continuous drift, duplicate for loop */}
+      <ScrollReveal delay={120}>
       <section className="mx-auto max-w-6xl px-[clamp(1.5rem,5vw,3rem)] md:px-[clamp(2rem,4vw,4rem)] py-[clamp(6rem,14vw,12rem)] md:py-[clamp(8rem,10vw,12rem)]" aria-label="Products">
         <div className="flex items-end justify-between mb-8 md:mb-12">
           <div>
@@ -180,69 +190,63 @@ export default function HomePage() {
             <p className="mt-3 text-stone-text text-base md:text-lg">Portable stations and solar panels selected for Nigerian conditions.</p>
           </div>
         </div>
-        <div className="relative">
-          <CarouselArrows />
-          <div
-            id="product-scroll"
-            className="overflow-x-auto scroll-smooth snap-x snap-mandatory flex gap-5 md:gap-6 pb-6 -mx-2 px-2 scrollbar-none"
-            style={{ scrollbarWidth: 'none' }}
-          >
-            {products.map((p) => (
-              <a
-                key={p.id}
-                href="#"
-                className="snap-start shrink-0 w-[280px] md:w-[340px] glass-card rounded-xl overflow-hidden hover:-translate-y-[4px] hover:shadow-[0_28px_80px_rgba(3,180,255,0.15)] transition-all duration-300 ease-premium block focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 focus-visible:ring-offset-white"
-                aria-label={`View ${p.name}`}
-              >
-                <div className="aspect-[4/3] relative overflow-hidden bg-stone-warm">
-                  <img src={p.placeholderImage} alt={p.name} className="w-full h-full object-cover transition-transform duration-300 ease-premium hover:scale-[1.05]" loading="lazy" />
-                  <div className="absolute top-3 left-3 bg-brand/90 text-white text-[10px] font-mono font-medium uppercase tracking-wide px-2.5 py-0.5 rounded-md">{p.category === "power-station" ? "Station" : "Solar"}</div>
-                </div>
-                <div className="p-5 md:p-6">
-                  <h3 className="font-display text-lg md:text-xl font-normal text-black leading-snug tracking-tight">{p.name}</h3>
-                  <p className="mt-2 text-sm text-stone-text leading-relaxed line-clamp-2">{p.description}</p>
-                  <div className="mt-4 flex items-baseline gap-2">
-                    <span className="text-2xl md:text-3xl font-display font-normal text-brand leading-none">{p.wattage}W</span>
-                    <span className="text-xs text-stone-muted font-mono uppercase tracking-wider">peak</span>
+        <ProductsMarquee />
+      </section>
+      </ScrollReveal>
+
+      {/* How It Works — redesigned with glass-panel container, horizontal flow, progressive connection line */}
+      <ScrollReveal delay={80}>
+      <section className="mx-auto max-w-6xl px-[clamp(1.5rem,5vw,3rem)] md:px-[clamp(2rem,4vw,4rem)] py-[clamp(6rem,14vw,12rem)] md:py-[clamp(8rem,10vw,12rem)]" aria-label="How It Works">
+        <div className="glass-card p-[clamp(1.75rem,4vw,3rem)] md:p-[clamp(2.5rem,5vw,3.5rem)] rounded-2xl relative overflow-hidden">
+          {/* Subtle decorative dot-pattern background */}
+          <div aria-hidden="true" className="absolute inset-0 opacity-[0.035]" style={{ backgroundImage: 'radial-gradient(circle at 2px 2px, rgba(3,180,255,0.8) 1px, transparent 0)', backgroundSize: '28px 28px' }} />
+          <div className="relative z-10">
+            <div className="text-center max-w-2xl mx-auto mb-14 md:mb-20">
+              <h2 className="font-display text-display font-normal tracking-tight text-black leading-[1.05] text-[clamp(2rem,5vw,3.5rem)] tracking-[-0.02em]">How It Works</h2>
+              <p className="mt-4 text-stone-text text-base md:text-lg">Four simple steps from assessing your power need to reliable energy at home or work.</p>
+            </div>
+
+            {/* Step flow container */}
+            <div className="relative">
+              <div className="grid md:grid-cols-4 gap-8 md:gap-6">
+                {[
+                  { num: "01", title: "Assess Your Need", desc: "Identify the appliances and duration you need to power. Small backup, full home, or off-grid site." },
+                  { num: "02", title: "Connect via WhatsApp", desc: "Message us directly. We help confirm the right product, pricing, and delivery timeline for your location." },
+                  { num: "03", title: "Confirm & Deliver", desc: "We arrange delivery and, where needed, provide guidance on safe setup and usage for Nigerian conditions." },
+                  { num: "04", title: "Reliable Power", desc: "Your station or solar array runs quietly and efficiently — ready for heat, humidity, and unpredictable infrastructure." },
+                ].map((step, i) => (
+                  <div key={i} className="relative group">
+                    {/* Number circle */}
+                    <div className="flex justify-center mb-6">
+                      <div className="w-12 h-12 md:w-14 md:h-14 rounded-full bg-brand/10 border border-brand/20 flex items-center justify-center shadow-[0_0_0_0_rgba(3,180,255,0)] group-hover:shadow-[0_0_20px_rgba(3,180,255,0.15)] transition-shadow duration-300">
+                        <span className="font-display text-xl md:text-2xl font-normal text-brand leading-none">{step.num}</span>
+                      </div>
+                    </div>
+                    {/* Arrow connector (mobile vertical) */}
+                    <div className="md:hidden flex justify-center mb-4" aria-hidden="true">
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#03B4FF" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M12 5v14M5 12l7 7 7-7" /></svg>
+                    </div>
+                    <h3 className="font-display text-lg md:text-xl font-normal text-black tracking-tight leading-snug mb-3 text-center">{step.title}</h3>
+                    <p className="text-sm text-stone-text leading-relaxed text-center">{step.desc}</p>
                   </div>
-                </div>
-              </a>
-            ))}
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </section>
+      </ScrollReveal>
 
       {/* Spacer */}
       <div className="h-[clamp(2rem,6vw,4rem)]" aria-hidden="true" />
 
-      {/* How It Works — 4-step flow */}
-      <section className="mx-auto max-w-6xl px-[clamp(1.5rem,5vw,3rem)] md:px-[clamp(2rem,4vw,4rem)] py-[clamp(6rem,14vw,12rem)] md:py-[clamp(8rem,10vw,12rem)]" aria-label="How It Works">
-        <div className="text-center max-w-2xl mx-auto mb-12 md:mb-16">
-          <h2 className="font-display text-display font-normal tracking-tight text-black leading-[1.05] text-[clamp(2rem,5vw,3.5rem)]">How It Works</h2>
-          <p className="mt-4 text-stone-text text-base md:text-lg">Four simple steps from assessing your power need to reliable energy at home or work.</p>
-          {/* Placeholder process comment */}
-          {/* Placeholder process steps — confirm with Marstek before finalising --> */}
-        </div>
-        <div className="grid md:grid-cols-4 gap-6 md:gap-8 stagger">
-          {[
-            { num: "01", title: "Assess Your Need", desc: "Identify the appliances and duration you need to power. Small backup, full home, or off-grid site." },
-            { num: "02", title: "Connect via WhatsApp", desc: "Message us directly. We help confirm the right product, pricing, and delivery timeline for your location." },
-            { num: "03", title: "Confirm & Deliver", desc: "We arrange delivery and, where needed, provide guidance on safe setup and usage for Nigerian conditions." },
-            { num: "04", title: "Reliable Power", desc: "Your station or solar array runs quietly and efficiently — ready for heat, humidity, and unpredictable infrastructure." },
-          ].map((step, i) => (
-            <div key={i} className="glass-card p-[clamp(1.25rem,3.5vw,2rem)] md:p-[clamp(1.75rem,3vw,2.5rem)] animate-fade-up" style={{ animationDelay: `${i * 120}ms` }}>
-              <span className="block text-4xl md:text-5xl font-display font-normal text-brand/20 leading-none mb-4">{step.num}</span>
-              <h3 className="font-display text-xl md:text-[1.35rem] font-normal text-black tracking-tight leading-snug">{step.title}</h3>
-              <p className="mt-3 text-sm text-stone-text leading-relaxed">{step.desc}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* Spacer */}
-      <div className="h-[clamp(2rem,6vw,4rem)]" aria-hidden="true" />
+      {/* Decorative divider between How It Works and Testimonials */}
+      <div className="mx-auto max-w-6xl px-[clamp(1.5rem,5vw,3rem)] md:px-[clamp(2rem,4vw,4rem)] py-[clamp(2rem,6vw,4rem)]" aria-hidden="true">
+        <div className="h-px w-full bg-gradient-to-r from-transparent via-brand/15 to-transparent" />
+      </div>
 
       {/* Testimonials — placeholder only */}
+      <ScrollReveal delay={90}>
       <section className="mx-auto max-w-6xl px-[clamp(1.5rem,5vw,3rem)] md:px-[clamp(2rem,4vw,4rem)] py-[clamp(6rem,14vw,12rem)] md:py-[clamp(8rem,10vw,12rem)] bg-dark-section" aria-label="Testimonials">
         <div className="text-center max-w-2xl mx-auto mb-10 md:mb-14">
           <h2 className="font-display text-display font-normal tracking-tight text-white leading-[1.05] text-[clamp(2rem,5vw,3.5rem)]">What Customers Say</h2>
@@ -267,19 +271,53 @@ export default function HomePage() {
           ))}
         </div>
       </section>
+      </ScrollReveal>
 
       {/* Spacer */}
       <div className="h-[clamp(2rem,6vw,4rem)]" aria-hidden="true" />
 
-      {/* FAQ — accordion */}
-      <section className="mx-auto max-w-3xl px-[clamp(1.5rem,5vw,3rem)] md:px-[clamp(2rem,4vw,4rem)] py-[clamp(6rem,14vw,12rem)] md:py-[clamp(8rem,10vw,12rem)]" aria-label="Frequently Asked Questions">
-        <div className="text-center mb-10 md:mb-14">
-          <h2 className="font-display text-display font-normal tracking-tight text-black leading-[1.05] text-[clamp(2rem,5vw,3.5rem)]">Frequently Asked</h2>
-          <p className="mt-3 text-stone-text text-base md:text-lg">Quick answers about portable solar and power stations in Nigeria.</p>
+      {/* Decorative divider between Testimonials and FAQ */}
+      <div className="mx-auto max-w-6xl px-[clamp(1.5rem,5vw,3rem)] md:px-[clamp(2rem,4vw,4rem)] py-[clamp(2rem,6vw,4rem)]" aria-hidden="true">
+        <div className="h-px w-full bg-gradient-to-r from-transparent via-brand/15 to-transparent" />
+      </div>
+
+      {/* FAQ — two-column layout */}
+      <ScrollReveal delay={70}>
+      <section className="mx-auto max-w-6xl px-[clamp(1.5rem,5vw,3rem)] md:px-[clamp(2rem,4vw,4rem)] py-[clamp(6rem,14vw,12rem)] md:py-[clamp(8rem,10vw,12rem)]" aria-label="Frequently Asked Questions">
+        <div className="grid md:grid-cols-[1fr_1.6fr] gap-12 md:gap-16 lg:gap-24 items-start">
+          {/* Left column: heading, subtext, WhatsApp CTA */}
+          <div className="md:sticky md:top-24 md:self-start">
+            <h2 className="font-display text-display font-normal tracking-tight text-black leading-[1.05] text-[clamp(2rem,5vw,3.5rem)] tracking-[-0.02em]">
+              Frequently Asked
+            </h2>
+            <p className="mt-5 text-stone-text text-base md:text-lg leading-relaxed max-w-md">
+              Quick answers about portable solar and power stations in Nigeria. Still wondering about something?
+            </p>
+            <div className="mt-8">
+              <a
+                href="#"
+                className="inline-flex items-center gap-2 bg-brand px-7 py-3.5 text-sm font-bold text-white shadow-[0_8px_28px_rgba(3,180,255,0.35)] hover:shadow-[0_12px_32px_rgba(3,180,255,0.5)] hover:-translate-y-[2px] active:translate-y-0 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 focus-visible:ring-offset-white transition-[transform,shadow] duration-300 ease-premium"
+                aria-label="Chat on WhatsApp with Marstek Nigeria"
+              >
+                <span className="inline-flex items-center justify-center w-5 h-5 bg-white/20 backdrop-blur-sm shrink-0">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true" className="text-white">
+                    <path d="M12 2C6.48 2 2 6.48 2 12c0 1.89.52 3.66 1.43 5.16L2 22l4.93-1.28A9.96 9.96 0 0012 22c5.52 0 10-4.48 10-10S17.52 2 12 2z" fill="currentColor" />
+                  </svg>
+                </span>
+                <span>Still have questions? WhatsApp us</span>
+              </a>
+              <p className="mt-4 text-xs text-stone-muted font-mono">Placeholder WhatsApp number — replace with real Marstek contact</p>
+            </div>
+          </div>
+
+          {/* Right column: grouped accordion */}
+          <div className="w-full">
+            {/* PLACEHOLDER FAQ — confirm answers with Marstek --> */}
+            <FAQAccordion />
+          </div>
         </div>
-        {/* PLACEHOLDER FAQ — confirm answers with Marstek --> */}
-        <FAQAccordion />
       </section>
+      </ScrollReveal>
 
     </div>
   );

@@ -57,7 +57,8 @@
   --space-fluid-lg: clamp(2.5rem, 5vw, 5rem);
   --space-fluid-xl: clamp(4rem, 8vw, 7rem);
 
-  /* Typography scale — screen-proportionate via clamp */
+  /* Consistent section vertical spacing */
+  --spacing-section: clamp(6rem, 14vw, 12rem);
   --text-hero: clamp(2.5rem, 7vw, 5.5rem);
   --text-display: clamp(1.75rem, 4vw, 3rem);
   --text-body-lg: 1.125rem;
