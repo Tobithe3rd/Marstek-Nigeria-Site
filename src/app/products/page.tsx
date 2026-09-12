@@ -33,8 +33,8 @@ export default function ProductsPage() {
             </a>
 
             {/* Content — glass card surface */}
-            <div className="p-6 md:p-7">
-              <div className="flex items-start justify-between gap-4 mb-3">
+            <div className="p-8 md:p-10">
+              <div className="flex items-start justify-between gap-4 mb-4">
                 <h3 className="font-display text-xl md:text-[1.35rem] font-normal text-black leading-snug tracking-tight group-hover:text-brand transition-colors duration-200">
                   <a href="#" className="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 focus-visible:ring-offset-white">
                     {p.name}
@@ -45,12 +45,13 @@ export default function ProductsPage() {
                 </span>
               </div>
 
-              <p className="text-sm text-stone-text leading-relaxed mb-5">
+              <p className="text-sm text-stone-text leading-relaxed mb-6">
                 {p.description}
               </p>
+              <div className="border-t border-stone-warm/60 mb-6" aria-hidden="true" />
 
               {/* Specs grid */}
-              <dl className="grid grid-cols-2 gap-x-6 gap-y-3 mb-5">
+              <dl className="grid grid-cols-2 gap-x-6 gap-y-4 mb-6">
                 {Object.entries(p.specs).map(([key, value]) => (
                   <div key={key}>
                     <dt className="text-xs font-mono uppercase tracking-[0.08em] text-stone-muted leading-none">
@@ -64,14 +65,14 @@ export default function ProductsPage() {
               </dl>
 
               {/* Wattage highlight — larger, more confident */}
-              <div className="flex items-baseline gap-3 pt-5 border-t border-stone-warm/50">
+              <div className="flex items-baseline gap-3 pt-6 border-t border-stone-warm/50">
                 <span className="text-4xl md:text-[2.5rem] font-display font-normal text-brand leading-none tracking-tight">
                   {p.wattage}W
                 </span>
                 <span className="text-xs text-stone-muted font-mono uppercase tracking-wider">peak output</span>
               </div>
 
-              <div className="mt-5 flex items-center justify-between">
+              <div className="mt-6 flex items-center justify-between">
                 <span className="text-xs text-stone-muted italic">{p.priceNote}</span>
                 <a
                   href="#"
