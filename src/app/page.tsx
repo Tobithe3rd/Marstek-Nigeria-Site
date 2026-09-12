@@ -44,7 +44,7 @@ export default function HomePage() {
               Reliable energy, <span className="italic text-brand-soft">anywhere</span> in Nigeria.
             </h1>
             <p className="mt-6 text-sm md:text-base text-white/50 leading-relaxed max-w-md">
-              Portable solar power for homes, businesses, and communities — built for Nigerian heat and humidity.
+              Portable solar power for homes, businesses, and communities, built for Nigerian heat and humidity.
             </p>
             <div className="mt-12 flex flex-wrap items-center gap-4">
               <Link
@@ -71,7 +71,7 @@ export default function HomePage() {
                 Built for Nigerian <span className="italic text-brand">conditions.</span>
               </h2>
               <p className="mt-6 text-stone-text leading-[1.7] text-[1.05rem] md:text-lg">
-                From dense urban neighborhoods to remote rural sites, our portable power stations and solar panels are selected for the realities Nigerian users face every day — intense heat, high humidity, and an infrastructure that demands self-reliance.
+                From dense urban neighborhoods to remote rural sites, our portable power stations and solar panels are selected for the realities Nigerian users face every day: intense heat, high humidity, and an infrastructure that demands self-reliance.
               </p>
               <div className="mt-10 flex flex-wrap gap-x-10 gap-y-4 text-sm font-mono text-stone-muted">
                 <div>
@@ -99,7 +99,7 @@ export default function HomePage() {
                   priority
                 />
                 <div className="absolute bottom-6 left-6 bg-navy-deep/70 backdrop-blur-md px-5 py-3 rounded-md">
-                  <p className="text-[10px] font-mono uppercase tracking-wider text-white/50">Phase 1 — Placeholders</p>
+                  <p className="text-[10px] font-mono uppercase tracking-wider text-white/50">Phase 1: Placeholders</p>
                   <p className="text-xs font-semibold text-white">Placeholder imagery</p>
                 </div>
               </div>
@@ -162,7 +162,7 @@ export default function HomePage() {
               </div>
               <h3 className="font-display text-xl md:text-[1.4rem] font-normal text-white tracking-tight leading-snug">Local Support</h3>
               <p className="mt-4 text-sm text-white/70 leading-relaxed">
-                Based in Lagos. Service, advice, and delivery tailored to Nigerian conditions — heat, humidity, and the unexpected.
+                Based in Lagos. Service, advice, and delivery tailored to Nigerian conditions: heat, humidity, and the unexpected.
               </p>
             </article>
           </div>

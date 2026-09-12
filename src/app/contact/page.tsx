@@ -11,7 +11,7 @@ export default function ContactPage() {
           <div className="mt-6 w-16 h-[3px] bg-gradient-to-r from-brand to-brand-soft rounded-sm" aria-hidden="true" />
           <div className="mt-10 space-y-6 text-stone-text leading-[1.75] text-[1.05rem] md:text-lg">
             <p>
-              We are based in Lagos, Nigeria. Whether you need advice on the right power station for your home, want to discuss solar arrays for a site, or just want to confirm current stock — reach out directly.
+              We are based in Lagos, Nigeria. Whether you need advice on the right power station for your home, want to discuss solar arrays for a site, or just want to confirm current stock, reach out directly.
             </p>
             <address className="not-italic space-y-4 text-sm md:text-base">
               <div>
@@ -45,7 +45,7 @@ export default function ContactPage() {
             <WhatsAppButton />
           </div>
           <p className="mt-5 text-[11px] text-white/20 font-mono relative z-10">
-            Placeholder number — replace with Marstek contact
+            Placeholder number: replace with Marstek contact
           </p>
         </div>
       </div>

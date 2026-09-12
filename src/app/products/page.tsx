@@ -8,7 +8,7 @@ export default function ProductsPage() {
           Products
         </h1>
         <p className="mt-6 text-stone-text leading-relaxed text-base md:text-lg max-w-xl">
-          Portable power stations and solar panels selected for Nigerian conditions — heat, humidity, and the unpredictable rhythms of unpredictable infrastructure.
+          Portable power stations and solar panels selected for Nigerian conditions, including heat, humidity, and the unpredictable rhythms of unpredictable infrastructure.
         </p>
       </header>
 
