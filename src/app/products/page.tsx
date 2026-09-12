@@ -33,7 +33,7 @@ export default function ProductsPage() {
             </a>
 
             {/* Content — glass card surface */}
-            <div className="p-8 md:p-10">
+            <div className="p-[clamp(1.75rem,4vw,2.5rem)] md:p-[clamp(2.5rem,3vw,3.5rem)]">
               <div className="flex items-start justify-between gap-4 mb-4">
                 <h3 className="font-display text-xl md:text-[1.35rem] font-normal text-black leading-snug tracking-tight group-hover:text-brand transition-colors duration-200">
                   <a href="#" className="focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand focus-visible:ring-offset-2 focus-visible:ring-offset-white">

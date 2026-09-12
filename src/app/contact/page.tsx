@@ -33,7 +33,7 @@ export default function ContactPage() {
         </div>
 
         {/* WhatsApp card — enhanced glass */}
-        <div className="glass-card-dark p-8 md:p-10 shadow-[0_20px_60px_rgba(3,180,255,0.08)] relative overflow-hidden">
+        <div className="glass-card-dark p-[clamp(1.75rem,4vw,2.5rem)] md:p-[clamp(2.5rem,3vw,3.5rem)] shadow-[0_20px_60px_rgba(3,180,255,0.08)] relative overflow-hidden">
           <div className="absolute top-0 right-0 w-[220px] h-[220px] bg-brand/10 -translate-y-1/2 translate-x-1/3 rounded-full blur-[60px]" aria-hidden="true" />
           <h2 className="font-display text-2xl md:text-[1.75rem] font-normal text-white tracking-tight relative z-10 leading-snug">
             Quick WhatsApp Chat

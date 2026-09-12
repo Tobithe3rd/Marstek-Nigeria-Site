@@ -10,7 +10,10 @@ export default function HomePage() {
       <section
         className="relative overflow-hidden bg-navy-deep text-white"
         aria-label="Hero"
+        style={{ backgroundImage: 'url(/images/hero-bg.jpg)', backgroundSize: 'cover', backgroundPosition: 'center' }}
       >
+        {/* Gradient overlay: solid navy fading to transparent */}
+        <div className="absolute inset-0 bg-gradient-to-r from-navy-deep via-navy-deep/80 to-transparent" aria-hidden="true" />
         {/* Subtle geometric solar pattern — lowered opacity for premium depth */}
         <div
           className="absolute inset-0 opacity-[0.04]"
@@ -61,7 +64,7 @@ export default function HomePage() {
 
       {/* Feature intro — editorial card, light glass background */}
       <section className="mx-auto max-w-5xl md:max-w-6xl px-[clamp(1.5rem,5vw,3rem)] md:px-[clamp(2rem,4vw,4rem)] py-[clamp(6rem,14vw,12rem)] md:py-[clamp(8rem,10vw,12rem)]">
-        <div className="glass-card p-10 md:p-16 md:rounded-2xl">
+        <div className="glass-card p-[clamp(1.5rem,4vw,2.5rem)] md:p-[clamp(2.5rem,4vw,4rem)] md:rounded-2xl">
           <div className="max-w-4xl mx-auto grid md:grid-cols-[1fr_1.4fr] gap-12 md:gap-20 items-center">
             <div>
               <h2 className="font-display text-display font-normal tracking-tight text-black leading-[1.1] text-[clamp(2rem,5vw,3.5rem)] tracking-[-0.02em] animate-fade-up">
@@ -117,7 +120,7 @@ export default function HomePage() {
 
           <div className="grid md:grid-cols-[1fr_1.2fr_1fr] gap-[clamp(1rem,2.5vw,1.5rem)] md:gap-[clamp(1.25rem,2vw,1.5rem)] stagger">
             {/* Card 1 — glass surface with subtle radius */}
-            <article className="glass-card p-6 md:p-8 hover:-translate-y-[6px] hover:shadow-[0_28px_80px_rgba(3,180,255,0.12)] transition-[transform,shadow] duration-300 ease-premium animate-fade-up">
+            <article className="glass-card p-[clamp(1.25rem,3.5vw,2rem)] md:p-[clamp(1.75rem,3vw,2.5rem)] hover:-translate-y-[6px] hover:shadow-[0_28px_80px_rgba(3,180,255,0.12)] transition-[transform,shadow] duration-300 ease-premium animate-fade-up">
               <div className="w-10 h-10 bg-brand/15 flex items-center justify-center mb-6 rounded-md">
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="text-brand">
                   <rect x="4" y="4" width="16" height="16" rx="3" />
@@ -141,7 +144,7 @@ export default function HomePage() {
                 sizes="(max-width: 768px) 100vw, 40vw"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-navy-deep/70 via-transparent to-transparent" aria-hidden="true" />
-              <div className="relative z-10 p-6 md:p-8">
+              <div className="relative z-10 p-[clamp(1.25rem,3.5vw,2rem)] md:p-[clamp(1.75rem,3vw,2.5rem)]">
                 <h3 className="font-display text-xl md:text-[1.4rem] font-normal text-white tracking-tight leading-snug">Solar Panels</h3>
                 <p className="mt-4 text-sm text-white/70 leading-relaxed">
                   Foldable monocrystalline arrays for charging and direct solar applications. Fast recharge, minimal footprint.
@@ -150,7 +153,7 @@ export default function HomePage() {
             </article>
 
             {/* Card 3 — glass surface */}
-            <article className="glass-card p-6 md:p-8 hover:-translate-y-[6px] hover:shadow-[0_28px_80px_rgba(3,180,255,0.12)] transition-[transform,shadow] duration-300 ease-premium animate-fade-up">
+            <article className="glass-card p-[clamp(1.25rem,3.5vw,2rem)] md:p-[clamp(1.75rem,3vw,2.5rem)] hover:-translate-y-[6px] hover:shadow-[0_28px_80px_rgba(3,180,255,0.12)] transition-[transform,shadow] duration-300 ease-premium animate-fade-up">
               <div className="w-10 h-10 bg-brand/15 flex items-center justify-center mb-6 rounded-md">
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" className="text-brand">
                   <circle cx="12" cy="12" r="10" />
