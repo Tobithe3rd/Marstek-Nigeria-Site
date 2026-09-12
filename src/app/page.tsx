@@ -213,7 +213,7 @@ export default function HomePage() {
                   { num: "01", title: "Assess Your Need", desc: "Identify the appliances and duration you need to power. Small backup, full home, or off-grid site." },
                   { num: "02", title: "Connect via WhatsApp", desc: "Message us directly. We help confirm the right product, pricing, and delivery timeline for your location." },
                   { num: "03", title: "Confirm & Deliver", desc: "We arrange delivery and, where needed, provide guidance on safe setup and usage for Nigerian conditions." },
-                  { num: "04", title: "Reliable Power", desc: "Your station or solar array runs quietly and efficiently — ready for heat, humidity, and unpredictable infrastructure." },
+                  { num: "04", title: "Reliable Power", desc: "Your station or solar array runs quietly and efficiently, ready for heat, humidity, and unpredictable infrastructure." },
                 ].map((step, i) => (
                   <div key={i} className="relative group">
                     {/* Number circle */}
@@ -266,7 +266,7 @@ export default function HomePage() {
                 ))}
               </div>
               <blockquote className="text-sm md:text-base text-white/80 leading-relaxed italic">“{t.quote}”</blockquote>
-              <p className="mt-4 text-[10px] font-mono uppercase tracking-wider text-white/30">Review placeholder — replace with real customer feedback</p>
+              <p className="mt-4 text-[10px] font-mono uppercase tracking-wider text-white/30">Review placeholder: replace with real customer feedback</p>
             </div>
           ))}
         </div>
@@ -306,7 +306,7 @@ export default function HomePage() {
                 </span>
                 <span>Still have questions? WhatsApp us</span>
               </a>
-              <p className="mt-4 text-xs text-stone-muted font-mono">Placeholder WhatsApp number — replace with real Marstek contact</p>
+              <p className="mt-4 text-xs text-stone-muted font-mono">Placeholder WhatsApp number: replace with real Marstek contact</p>
             </div>
           </div>
 
